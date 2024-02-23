@@ -32,7 +32,7 @@ def Play():
 
     user_choice = int(input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors.\n"))
     if user_choice >= 3 or user_choice < 0: 
-      print("Hile mi yapmaya çalışıyorsun?") 
+      print("Are trying to cheat?") 
       Play()
     else:
       print(game_images[user_choice])
@@ -59,7 +59,7 @@ def Play():
 
     again=input("Try again?y/n")
 
-    if again:
+    if again=="y":
        Play()
     else:
        quit()   

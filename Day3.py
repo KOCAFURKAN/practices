@@ -49,10 +49,9 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 
     else:
       print("You fell into a hole. Game Over.")
-      again=input("Try again?y/n")
-
-    if again:
-       Play()
+    retry=input("Do you wish to retry?y/n")
+    if retry=="y":
+        Play()
     else:
-       quit()   
+        quit()    
 Play()      
