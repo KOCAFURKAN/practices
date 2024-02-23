@@ -326,14 +326,15 @@ def Play(word_list, stages, logo):
         if "_" not in display:
             end_of_game = True
             print("You win.")
-
-    
     
         print(stages[lives])
-       
     again=input("Try again?y/n")
+
     if again=="y":
-       Play()
+     Play(word_list, stages, logo)
     else:
-       quit()   
+        quit() 
+       
+      
+
 Play(word_list, stages, logo)
